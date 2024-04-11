@@ -1,4 +1,5 @@
-import Link from "next/link";
+import Hero from "@/components/Hero";
+import InfoBoxes from "@/components/InfoBoxes";
 
 export const metadata = {
     title: 'HomePage | PropertyPulse'
@@ -6,10 +7,10 @@ export const metadata = {
 
 const HomePage = () => {
   return (
-    <div>
-        <h1 className="text-3xl">Welcome</h1>
-        <Link href="\properties">Show properties</Link>
-    </div>
+    <>
+      <Hero />
+      <InfoBoxes />
+    </>
   )
 }
 
