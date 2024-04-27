@@ -1,9 +1,12 @@
 import conectDB from "@/config/config";
+import Property from "@/models/Property";
 
 export const GET = async (request) => {
   try {
     await conectDB();
-    return new Response(JSON.stringify({ message: "Hello word!" }), {
+    const properties = await Property.find({});
+    console.log(properties + "ceva");
+    return new Response(JSON.stringify(properties), {
       status: 200,
     });
   } catch (error) {
