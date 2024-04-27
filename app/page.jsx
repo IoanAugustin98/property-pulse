@@ -1,8 +1,9 @@
 import Hero from "@/components/Hero";
+import HomeProperties from "@/components/HomeProperties";
 import InfoBoxes from "@/components/InfoBoxes";
 
 export const metadata = {
-    title: 'HomePage | PropertyPulse'
+  title: "HomePage | PropertyPulse",
 };
 
 const HomePage = () => {
@@ -10,8 +11,9 @@ const HomePage = () => {
     <>
       <Hero />
       <InfoBoxes />
+      <HomeProperties />
     </>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
